@@ -2,7 +2,7 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
+- Preview: https://main--aem-doe--kunaladobe.aem.page/
 - Live: https://main--{repo}--{owner}.aem.live/
 
 ## Documentation
