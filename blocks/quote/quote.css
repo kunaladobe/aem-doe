@@ -28,3 +28,18 @@
     width: 30px;
     background-color: darkgray;
 }
+
+.block.quote.bg-red {
+    background-color: var(--bg-red);
+    color: var(--white);
+}
+
+.block.quote.bg-blue {
+    color: var(--white);
+    background-color: var(--bg-blue);
+}
+
+.block.quote.bg-green {
+    color: var(--white);
+    background-color: var(--bg-green);
+}
