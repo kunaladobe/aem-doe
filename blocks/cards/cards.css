@@ -1,15 +1,16 @@
 .cards > ul {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-    grid-gap: 24px;
 }
 
 .cards > ul > li {
-    border: 1px solid #dadada;
     background-color: var(--background-color);
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
 }
 
 .cards .cards-card-body {
@@ -17,29 +18,40 @@
 }
 
 .cards .cards-card-image {
+    border-bottom: 4px solid var(--red02);
+    border-radius: 4px 4px 0 0;
     line-height: 0;
 }
 
 .cards > ul > li img {
-    width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
+    width: 100%;
 }
 
 .cards {
     .cards-card-info {
         color: var(--on-surface-light);
+        margin: 0;
+        padding: 32px;
+
+        h3 {
+            font-weight: 700;
+            margin: 0;
+        }
 
         h4 {
             font-size: var(--body2-font-size);
-            line-height: var(--body2-line-height);
             font-weight: 700;
+            line-height: var(--body2-line-height);
+            margin: 0 0 8px;
         }
 
         p {
             font-size: var(--body2-font-size);
-            line-height: var(--body2-line-height);
             font-weight: 400;
+            line-height: var(--body2-line-height);
+            margin: 0 0 16px;
         }
     }
 }
