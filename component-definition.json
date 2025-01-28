@@ -173,6 +173,21 @@
               }
             }
           }
+        },
+        {
+          "title": "HeroFeature",
+          "id": "herofeature",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "HeroFeature",
+                  "model": "herofeature"
+                }
+              }
+            }
+          }
         }
       ]
     }
