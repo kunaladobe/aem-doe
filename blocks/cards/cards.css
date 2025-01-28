@@ -37,7 +37,7 @@
 
         h3 {
             font-weight: 700;
-            margin: 0;
+            margin: 16px 0 0;
         }
 
         h4 {
@@ -51,7 +51,11 @@
             font-size: var(--body2-font-size);
             font-weight: 400;
             line-height: var(--body2-line-height);
-            margin: 0 0 16px;
+            margin: 0;
+        }
+
+        .icon {
+            margin-top: 24px;
         }
     }
 }
