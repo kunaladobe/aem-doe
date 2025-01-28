@@ -25,3 +25,21 @@
     aspect-ratio: 4 / 3;
     object-fit: cover;
 }
+
+.cards {
+    .cards-card-info {
+        color: var(--on-surface-light);
+
+        h4 {
+            font-size: var(--body2-font-size);
+            line-height: var(--body2-line-height);
+            font-weight: 700;
+        }
+
+        p {
+            font-size: var(--body2-font-size);
+            line-height: var(--body2-line-height);
+            font-weight: 400;
+        }
+    }
+}
