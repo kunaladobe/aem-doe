@@ -53,6 +53,32 @@
             "value": "h6"
           }
         ]
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Title size",
+        "description": "Title font size and line height",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "body 1",
+            "value": "body1"
+          },
+          {
+            "name": "body 2",
+            "value": "body2"
+          },
+          {
+            "name": "subtitle 1",
+            "value": "subtitle1"
+          },
+          {
+            "name": "subtitle 2",
+            "value": "subtitle2"
+          }
+        ]
       }
     ]
   },

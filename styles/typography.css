@@ -1,0 +1,20 @@
+:root {
+    --heading1-font-size: 26px;
+    --heading1-line-height: 31px;
+    --heading2-font-size: 24px;
+    --heading2-line-height: 29px;
+    --heading3-font-size: 20px;
+    --heading3-line-height: 29px;
+    --heading4-font-size: 18px;
+    --heading4-line-height: 22px;
+    --body1-font-size: 16px;
+    --body1-line-height: 19px;
+    --body2-font-size: 14px;
+    --body2-line-height: 21px;
+    --subtitle1-font-size: 16px;
+    --subtitle1-line-height: 19px;
+    --subtitle2-font-size: 16px;
+    --subtitle2-line-height: 19px;
+    --button-font-size: 16px;
+    --button-line-height: 19px;
+}

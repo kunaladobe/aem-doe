@@ -10,6 +10,7 @@
  * governing permissions and limitations under the License.
  */
 @import url("color-palette.css");
+@import url("typography.css");
 
 :root {
     /* colors */
@@ -115,19 +116,23 @@ h6 {
 }
 
 h1 {
-    font-size: var(--heading-font-size-xxl);
+    font-size: var(--heading1-font-size);
+    line-height: var(--heading1-line-height);
 }
 
 h2 {
-    font-size: var(--heading-font-size-xl);
+    font-size: var(--heading2-font-size);
+    line-height: var(--heading2-line-height);
 }
 
 h3 {
-    font-size: var(--heading-font-size-l);
+    font-size: var(--heading3-font-size);
+    line-height: var(--heading3-line-height);
 }
 
 h4 {
-    font-size: var(--heading-font-size-m);
+    font-size: var(--heading4-font-size);
+    line-height: var(--heading4-line-height);
 }
 
 h5 {
@@ -273,4 +278,29 @@ main .section.highlight {
     background-color: var(--light-color);
     margin: 0;
     padding: 40px 0;
+}
+
+.body1 {
+    font-size: var(--body1-font-size);
+    line-height: var(--body1-line-height);
+}
+
+.body2 {
+    font-size: var(--body2-font-size);
+    line-height: var(--body2-line-height);
+}
+
+.subtitle1 {
+    font-size: var(--subtitle1-font-size);
+    line-height: var(--subtitle1-line-height);
+}
+
+.subtitle2 {
+    font-size: var(--subtitle2-font-size);
+    line-height: var(--subtitle2-line-height);
+}
+
+.button {
+    font-size: var(--button-font-size);
+    line-height: var(--button-line-height);
 }
