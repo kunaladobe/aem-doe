@@ -6,13 +6,13 @@ export default function decorate(block) {
 
   // Create a new div with class "left" for element 1 and element 2
   const leftWrapper = document.createElement('div');
-  leftWrapper.className = 'hero-left';
+  leftWrapper.className = 'left';
   leftWrapper.appendChild(element1);
   leftWrapper.appendChild(element2);
 
   // Create a new div with class "right" for element 3
   const rightWrapper = document.createElement('div');
-  rightWrapper.className = 'hero-right';
+  rightWrapper.className = 'right';
   rightWrapper.appendChild(element3);
 
   // Clear the original wrapper and append the new wrappers
