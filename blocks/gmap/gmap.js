@@ -49,45 +49,15 @@ const embedTwitter = (url) => {
   return embedHTML;
 };
 
-const embedGoogleMaps = (url) => {
-  // First, ensure we're working with a string URL
-  const urlString = url.href || url;
-  let embedSrc = '';
-
-  // Convert any maps URL to the embed format
-  const cleanUrl = urlString
-    .replace(/\?q=/g, '/place/') // Convert search URLs to place URLs
-    .replace(/maps\/place/g, 'maps/embed/place') // Convert place URLs to embed URLs
-    .replace(/maps\?/g, 'maps/embed?') // Convert general maps URLs to embed URLs
-    .replace(/\?q=/g, '?pb=!1m18!1m12!1m3!1d'); // Add required parameters for search queries
-
-  // Regular expression to match coordinates
-  const coordsMatch = urlString.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/);
-
-  if (coordsMatch) {
-    // If coordinates are found, create a coordinate-based embed URL
-    const [, lat, lng] = coordsMatch;
-
-    // Extract zoom if present, default to 15 if not
-    const zoomMatch = urlString.match(/,(\d+)z/);
-    const zoom = zoomMatch ? zoomMatch[1] : '15';
-
-    embedSrc = `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1000!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f${zoom}`;
-  } else {
-    // For place names or general searches, use the cleaned URL
-    embedSrc = cleanUrl;
-  }
-
-  return `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+const embedGoogleMaps = (url) => `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
     <iframe 
-      src="${embedSrc}"
+      src="${url.href}"
       style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;"
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>`;
-};
 
 const loadEmbed = (block, link, autoplay) => {
   if (block.classList.contains('embed-is-loaded')) {
