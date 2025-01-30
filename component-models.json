@@ -285,5 +285,8 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "gmap"
   }
 ]
