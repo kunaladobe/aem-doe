@@ -77,7 +77,7 @@ const loadEmbed = (block, link, autoplay) => {
       embed: embedTwitter,
     },
     {
-      match: ['google.com/maps', 'goo.gl/maps'],
+      match: ['google.com/maps', 'goo.gl/maps', 'maps.app.goo.gl'],
       embed: embedGoogleMaps,
     },
   ];
