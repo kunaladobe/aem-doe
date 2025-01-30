@@ -82,6 +82,10 @@ const loadEmbed = (block, link, autoplay) => {
 };
 
 export default function decorate(block) {
+  const pictureEl = block.children[0];
+  const pictureTag = document.createElement('picture');
+  pictureTag.className = 'picture-wrapper';
+  pictureTag.appendChild(pictureEl);
   const placeholder = block.querySelector('picture');
   const link = block.querySelector('a').href;
   block.textContent = '';
