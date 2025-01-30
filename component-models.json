@@ -290,11 +290,25 @@
     "id": "gmap",
     "fields": [
       {
-        "component": "richtext",
-        "name": "gmapLink",
-        "value": "gmapLink",
-        "label": "gmapLink",
-        "valueType": "string"
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Embed Classes",
+        "options": [
+          {
+            "name": "Embed Style",
+            "children": [
+              {
+                "name": "Embed video",
+                "value": "embed-video"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "embed",
+        "label": "Embed"
       }
     ]
   }
