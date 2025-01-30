@@ -290,12 +290,11 @@
     "id": "gmap",
     "fields": [
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "heading",
-        "value": "",
-        "label": "Heading",
-        "description": "Sets the heading."
+        "component": "richtext",
+        "name": "gmapLink",
+        "value": "gmapLink",
+        "label": "gmapLink",
+        "valueType": "string"
       }
     ]
   }
