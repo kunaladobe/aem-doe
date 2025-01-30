@@ -49,6 +49,15 @@ const embedTwitter = (url) => {
   return embedHTML;
 };
 
+const embedGoogleMaps = (url) => {
+  const embedHTML = `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+      <iframe src="https://www.google.com/maps/embed?pb=${encodeURIComponent(url.searchParams.get('q') || url.pathname)}"
+      style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" 
+      allowfullscreen="" loading="lazy"></iframe>
+    </div>`;
+  return embedHTML;
+};
+
 const loadEmbed = (block, link, autoplay) => {
   if (block.classList.contains('embed-is-loaded')) {
     return;
@@ -67,6 +76,10 @@ const loadEmbed = (block, link, autoplay) => {
       match: ['twitter'],
       embed: embedTwitter,
     },
+    {
+      match: ['google.com/maps', 'goo.gl/maps'],
+      embed: embedGoogleMaps,
+    },
   ];
 
   const config = EMBEDS_CONFIG.find((e) => e.match.some((match) => link.includes(match)));
@@ -82,12 +95,6 @@ const loadEmbed = (block, link, autoplay) => {
 };
 
 export default function decorate(block) {
-  // const pictureEl = block.children[0];
-  // const pictureTag = document.createElement('picture');
-  // pictureTag.className = 'picture-wrapper';
-  // pictureTag.appendChild(pictureEl);
-  // block.innerHTML = '';
-  // block.appendChild(pictureTag);
   const placeholder = block.querySelector('picture');
   const link = block.querySelector('a').href;
   block.textContent = '';
