@@ -86,6 +86,8 @@ export default function decorate(block) {
   const pictureTag = document.createElement('picture');
   pictureTag.className = 'picture-wrapper';
   pictureTag.appendChild(pictureEl);
+  block.innerHTML = '';
+  block.appendChild(pictureTag);
   const placeholder = block.querySelector('picture');
   const link = block.querySelector('a').href;
   block.textContent = '';
