@@ -1,7 +1,7 @@
 .herofeature {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .herofeature .left {
@@ -13,23 +13,23 @@
 .herofeature .right {
     align-self: flex-start;
     border-left: none;
-    padding-left: 0;
     margin-top: 20px;
+    padding-left: 0;
 }
 
 .herofeature .right a {
+    background-color: transparent;
+    color: var(--bg-blue);
     list-style: none;
+    margin: 0;
     text-decoration: underline;
     text-underline-offset: 4px;
-    color: var(--bg-blue);
-    background-color: transparent;
-    margin: 0;
 }
 
 @media screen and (width >= 600px) {
     .herofeature {
-        flex-direction: row;
         align-items: flex-start;
+        flex-direction: row;
     }
 
     .herofeature .left {
@@ -38,8 +38,8 @@
 
     .herofeature .right {
         border-left: 1px solid var(--red02);
-        padding-left: 15px;
         margin-top: 0;
+        padding-left: 15px;
     }
 }
 
