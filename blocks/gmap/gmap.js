@@ -40,7 +40,6 @@ const loadEmbed = (block, link, autoplay) => {
 };
 
 document.addEventListener('mapSearchClick', (e) => {
-  console.log(e.detail.text());
   const mapIframe = document.querySelector('.embed-map-iframe');
   mapIframe.src = e.detail.text();
 });
