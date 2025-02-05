@@ -1,3 +1,10 @@
 {
-  "extends": ["stylelint-config-standard"]
+  "extends": ["stylelint-config-standard", "stylelint-config-standard-scss"],
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "scss/at-rule-no-unknown": true,
+    "scss/load-no-partial-leading-underscore": null,
+    "selector-class-pattern": "^[a-z]+(-[a-z]+)*(__[a-z]+(-[a-z]+)*)?(--[a-z]+(-[a-z]+)*)?$",
+    "scss/no-global-function-names": null
+  }
 }

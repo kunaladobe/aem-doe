@@ -1,0 +1,13 @@
+@import '_brown';
+@import '_fuchsia';
+@import '_green';
+@import '_orange';
+@import '_purple';
+@import '_red';
+@import '_teal';
+@import '_yellow';
+
+.blue-accent {
+  --nsw-brand-accent: #{$blue-02};
+  --nsw-brand-accent-rgb: #{to-rgb($blue-02)};
+}

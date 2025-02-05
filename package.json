@@ -11,7 +11,8 @@
     "build:json:models": "merge-json-cli -i \"models/_component-models.json\" -o \"component-models.json\"",
     "build:json:definitions": "merge-json-cli -i \"models/_component-definition.json\" -o \"component-definition.json\"",
     "build:json:filters": "merge-json-cli -i \"models/_component-filters.json\" -o \"component-filters.json\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build:css": "sass styles/nsw-style-system/main.scss styles/main.css"
   },
   "repository": {
     "type": "git",
@@ -33,7 +34,10 @@
     "husky": "9.1.1",
     "merge-json-cli": "1.0.4",
     "npm-run-all": "4.1.5",
-    "stylelint": "^16.12.0",
-    "stylelint-config-standard": "^36.0.1"
+    "sass": "^1.83.4",
+    "stylelint": "^16.14.1",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-scss": "^6.11.0"
   }
 }
