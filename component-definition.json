@@ -143,21 +143,6 @@
           }
         },
         {
-          "title": "CustomImage",
-          "id": "customimage",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "CustomImage",
-                  "model": "customimage"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Fragment",
           "id": "fragment",
           "plugins": {

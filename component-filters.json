@@ -38,11 +38,5 @@
       "button",
       "title"
     ]
-  },
-  {
-    "id": "customimages",
-    "components": [
-      "customimage"
-    ]
   }
 ]
