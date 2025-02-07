@@ -44,5 +44,5 @@
       ]
     }
   ],
-  "filters": []
+  "filters": [{ "id": "section", "components": ["customimages"] }]
 }
