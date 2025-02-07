@@ -29,14 +29,14 @@
         },
         {
           "component": "richtext",
-          "name": "richtext",
+          "name": "description",
           "value": "",
           "label": "Richtext",
           "valueType": "string"
         },
         {
           "component": "richtext",
-          "name": "text",
+          "name": "title",
           "value": "",
           "label": "Text",
           "valueType": "string"
