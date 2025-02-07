@@ -1,7 +1,9 @@
 [
   {
     "id": "main",
-    "components": ["section"]
+    "components": [
+      "section"
+    ]
   },
   {
     "id": "section",
@@ -13,44 +15,34 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "quote",
-      "herofeature",
-      "gmap",
-      "mapsearch",
-      "table"
+      "fragment"
     ]
   },
   {
     "id": "cards",
-    "components": ["card"]
+    "components": [
+      "card"
+    ]
   },
   {
     "id": "columns",
-    "components": ["column"]
+    "components": [
+      "column"
+    ]
   },
   {
     "id": "column",
-    "components": ["text", "image", "button", "title"]
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
   },
   {
-    "id": "table",
-    "components": ["table-row"]
-  },
-  {
-    "id": "table-2-columns",
-    "components": ["table-col-2"]
-  },
-  {
-    "id": "table-3-columns",
-    "components": ["table-col-3"]
-  },
-  {
-    "id": "table-4-columns",
-    "components": ["table-col-4"]
-  },
-  {
-    "id": "table-5-columns",
-    "components": ["table-col-5"]
+    "id": "customimages",
+    "components": [
+      "customimage"
+    ]
   }
 ]

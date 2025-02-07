@@ -1,0 +1,40 @@
+.yellow {
+    --nsw-brand-dark: #694800;
+    --nsw-brand-light: #fff4cf;
+    --nsw-brand-supplementary: #faaf05;
+    --nsw-brand-accent: #00aa45;
+    --nsw-link: #694800;
+    --nsw-link-light: rgb(240, 236.7, 229.5);
+    --nsw-visited: rgb(90.79597534, 89.8181042532, 22.3449992632);
+    --nsw-visited-light: rgb(222.159195068, 221.9636208506, 208.4689998526);
+    --nsw-hover: rgba(105, 72, 0, 0.1);
+    --nsw-hover-light: rgba(240, 236.7, 229.5, 0.1);
+    --nsw-active: rgba(105, 72, 0, 0.2);
+    --nsw-active-light: rgba(240, 236.7, 229.5, 0.2);
+    --nsw-focus: rgb(183.999, 58.7044428571, 0);
+    --nsw-focus-light: rgb(240.7998, 215.7408885714, 204);
+    --nsw-disabled: rgb(180, 163.5, 127.5);
+    --nsw-brand-dark-rgb: 105, 72, 0;
+    --nsw-brand-light-rgb: 255, 244, 207;
+    --nsw-brand-supplementary-rgb: 250, 175, 5;
+    --nsw-brand-accent-rgb: 0, 170, 69;
+    --nsw-link-rgb: 105, 72, 0;
+    --nsw-link-light-rgb: 240, 237, 230;
+    --nsw-visited-rgb: 91, 90, 22;
+    --nsw-visited-light-rgb: 222, 222, 208;
+    --nsw-hover-rgb: 105, 72, 0;
+    --nsw-hover-light-rgb: 240, 237, 230;
+    --nsw-active-rgb: 105, 72, 0;
+    --nsw-active-light-rgb: 240, 237, 230;
+    --nsw-focus-rgb: 184, 59, 0;
+    --nsw-focus-light-rgb: 241, 216, 204;
+    --nsw-disabled-rgb: 180, 164, 128;
+}
+
+.yellow-accent {
+    --nsw-brand-accent: #faaf05;
+    --nsw-brand-accent-rgb: 250, 175, 5;
+    * {
+        --nsw-border-color: var(--nsw-brand-accent);
+    }
+}

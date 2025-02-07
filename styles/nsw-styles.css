@@ -1,0 +1,344 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+@import url("./color-palette.css");
+
+html {
+    font-size: 100%;
+    line-height: var(--nsw-line-height);
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+hr {
+    background-color: var(--nsw-grey-04);
+    border: 0;
+    height: 1px;
+    margin: 1rem 0;
+}
+
+.nsw-h1,
+.nsw-h2,
+.nsw-h3,
+.nsw-h4,
+.nsw-h5,
+.nsw-h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--nsw-font-bold);
+    margin: 0;
+}
+
+.nsw-h1,
+h1 {
+    font-size: var(--nsw-font-size-xxl-mobile);
+    line-height: var(--nsw-line-height-xxl-mobile);
+}
+
+@media (min-width: 62rem) {
+    .nsw-h1,
+    h1 {
+        font-size: var(--nsw-font-size-xxl-desktop);
+        line-height: var(--nsw-line-height-xxl-desktop);
+    }
+}
+
+.nsw-h2,
+h2 {
+    font-size: var(--nsw-font-size-xl-mobile);
+    line-height: var(--nsw-line-height-xl-mobile);
+}
+
+@media (min-width: 62rem) {
+    .nsw-h2,
+    h2 {
+        font-size: var(--nsw-font-size-xl-desktop);
+        line-height: var(--nsw-line-height-xl-desktop);
+    }
+}
+
+.nsw-h3,
+h3 {
+    font-size: var(--nsw-font-size-lg-mobile);
+    line-height: var(--nsw-line-height-lg-mobile);
+}
+
+@media (min-width: 62rem) {
+    .nsw-h3,
+    h3 {
+        font-size: var(--nsw-font-size-lg-desktop);
+        line-height: var(--nsw-line-height-lg-desktop);
+    }
+}
+
+.nsw-h4,
+h4 {
+    font-size: var(--nsw-font-size-md-mobile);
+    line-height: var(--nsw-line-height-md-mobile);
+}
+
+@media (min-width: 62rem) {
+    .nsw-h4,
+    h4 {
+        font-size: var(--nsw-font-size-md-desktop);
+        line-height: var(--nsw-line-height-md-desktop);
+    }
+}
+
+.nsw-h5,
+.nsw-h6,
+h5,
+h6 {
+    font-size: var(--nsw-font-size-sm-mobile);
+    line-height: var(--nsw-line-height-sm-mobile);
+}
+
+@media (min-width: 62rem) {
+    .nsw-h5,
+    .nsw-h6,
+    h5,
+    h6 {
+        font-size: var(--nsw-font-size-sm-desktop);
+        line-height: var(--nsw-line-height-sm-desktop);
+    }
+}
+
+* + .nsw-h1,
+* + h1 {
+    margin-top: 4rem;
+}
+
+* + .nsw-h2,
+* + h2 {
+    margin-top: 3rem;
+}
+
+* + .nsw-h3,
+* + h3 {
+    margin-top: 2rem;
+}
+
+* + .nsw-h4,
+* + .nsw-h5,
+* + .nsw-h6,
+* + h4,
+* + h5,
+* + h6 {
+    margin-top: 1.5rem;
+}
+
+.nsw-intro {
+    font-size: var(--nsw-font-size-md-mobile);
+    line-height: var(--nsw-line-height-md-mobile);
+    margin: 1rem 0 0;
+}
+
+@media (min-width: 62rem) {
+    .nsw-intro {
+        font-size: var(--nsw-font-size-md-desktop);
+        line-height: var(--nsw-line-height-md-desktop);
+    }
+}
+
+a {
+    color: var(--nsw-link);
+    font-weight: var(--nsw-font-bold);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--nsw-visited);
+}
+
+a:focus {
+    outline: solid 3px var(--nsw-focus);
+    outline-offset: 0;
+}
+
+a:hover {
+    background-color: var(--nsw-hover);
+    outline: 2px solid var(--nsw-hover);
+}
+
+a:active {
+    background-color: var(--nsw-active);
+    outline-color: var(--nsw-active);
+}
+
+.nsw-section--invert a {
+    color: var(--nsw-link-light);
+}
+
+.nsw-section--invert a:visited {
+    color: var(--nsw-visited-light);
+}
+
+.nsw-section--invert a:focus {
+    outline-color: var(--nsw-focus-light);
+}
+
+.nsw-section--invert a:hover {
+    background-color: var(--nsw-hover-light);
+    outline-color: var(--nsw-hover-light);
+}
+
+.nsw-section--invert a:active {
+    background-color: var(--nsw-active-light);
+    outline-color: var(--nsw-active-light);
+}
+
+.nsw-section-separator {
+    background-color: var(--nsw-grey-04);
+    border: 0;
+    height: 1px;
+    margin: 2rem 0;
+}
+
+@media (min-width: 48rem) {
+    .nsw-section-separator {
+        margin: 3rem 0;
+    }
+}
+
+.nsw-section-text {
+    margin-top: -0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.nsw-section-title {
+    margin: 0;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+    .nsw-section-title {
+        padding-top: 1rem;
+    }
+}
+
+:root {
+    /* Font */
+    --nsw-font-family: "Public Sans", sans-serif;
+    --nsw-font-size: 16px;
+    --nsw-line-height: 1.5;
+    --nsw-font-normal: 400;
+    --nsw-font-bold: 700;
+
+    --nsw-font-size-xxs-mobile: 12px;
+    --nsw-font-size-xxs-desktop: 12px;
+    --nsw-line-height-xxs-mobile: 1.5;
+    --nsw-line-height-xxs-desktop: 1.5;
+
+    --nsw-font-size-xs-mobile: 14px;
+    --nsw-font-size-xs-desktop: 14px;
+    --nsw-line-height-xs-mobile: 1.35;
+    --nsw-line-height-xs-desktop: 1.35;
+
+    --nsw-font-size-sm-mobile: 16px;
+    --nsw-font-size-sm-desktop: 16px;
+    --nsw-line-height-sm-mobile: 1.5;
+    --nsw-line-height-sm-desktop: 1.5;
+
+    --nsw-font-size-md-mobile: 18px;
+    --nsw-font-size-md-desktop: 20px;
+    --nsw-line-height-md-mobile: 1.33;
+    --nsw-line-height-md-desktop: 1.4;
+
+    --nsw-font-size-lg-mobile: 22px;
+    --nsw-font-size-lg-desktop: 24px;
+    --nsw-line-height-lg-mobile: 1.25;
+    --nsw-line-height-lg-desktop: 1.33;
+
+    --nsw-font-size-xl-mobile: 28px;
+    --nsw-font-size-xl-desktop: 32px;
+    --nsw-line-height-xl-mobile: 1.25;
+    --nsw-line-height-xl-desktop: 1.25;
+
+    --nsw-font-size-xxl-mobile: 36px;
+    --nsw-font-size-xxl-desktop: 48px;
+    --nsw-line-height-xxl-mobile: 1.25;
+    --nsw-line-height-xxl-desktop: 1.25;
+
+    /* Borders */
+    --nsw-border-width: 1px;
+    --nsw-border-style: solid;
+    /*--nsw-border-color: var(--nsw-brand-accent); *?
+  --nsw-border-radius: 4px;
+
+  /* Shadows */
+    /*--nsw-box-shadow: 0 4px 12px 0 rgba(var(--nsw-black-rgb), 0.15);*/
+
+    /* Maximum width of container */
+    --nsw-container-width: 1200px;
+
+    /*Breakpoint to switch to desktop view (Layout and Navigation) */
+    --desktop-breakpoint: 992px;
+
+    /* Font */
+    --base-font-size: 16px;
+    --font-size-reponsive-breakpoint: 992px;
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-bolder: bolder;
+
+    --nsw-font-size-xxs: var(--nsw-font-size-xxs-mobile);
+    --nsw-font-height-xxs: var(--nsw-font-height-xxs-mobile);
+    --nsw-font-size-xs: var(--nsw-font-size-xs-mobile);
+    --nsw-font-height-xs: var(--nsw-font-height-xs-mobile);
+    --nsw-font-size-sm: var(--nsw-font-size-sm-mobile);
+    --nsw-font-height-sm: var(--nsw-font-height-sm-mobile);
+    --nsw-font-size-md: var(--nsw-font-size-md-mobile);
+    --nsw-font-height-md: var(--nsw-font-height-md-mobile);
+    --nsw-font-size-lg: var(--nsw-font-size-lg-mobile);
+    --nsw-font-height-lg: var(--nsw-font-height-lg-mobile);
+    --nsw-font-size-xl: var(--nsw-font-size-xl-mobile);
+    --nsw-font-height-xl: var(--nsw-font-height-xl-mobile);
+    --nsw-font-size-xxl: var(--nsw-font-size-xxl-mobile);
+    --nsw-font-height-xxl: var(--nsw-font-height-xxl-mobile);
+}
+
+@media (min-width: 62rem) {
+    :root {
+        --nsw-font-size-xxs: var(--nsw-font-size-xxs-desktop);
+        --nsw-font-height-xxs: var(--nsw-font-height-xxs-desktop);
+        --nsw-font-size-xs: var(--nsw-font-size-xs-desktop);
+        --nsw-font-height-xs: var(--nsw-font-height-xs-desktop);
+        --nsw-font-size-sm: var(--nsw-font-size-sm-desktop);
+        --nsw-font-height-sm: var(--nsw-font-height-sm-desktop);
+        --nsw-font-size-md: var(--nsw-font-size-md-desktop);
+        --nsw-font-height-md: var(--nsw-font-height-md-desktop);
+        --nsw-font-size-lg: var(--nsw-font-size-lg-desktop);
+        --nsw-font-height-lg: var(--nsw-font-height-lg-desktop);
+        --nsw-font-size-xl: var(--nsw-font-size-xl-desktop);
+        --nsw-font-height-xl: var(--nsw-font-height-xl-desktop);
+        --nsw-font-size-xxl: var(--nsw-font-size-xxl-desktop);
+        --nsw-font-height-xxl: var(--nsw-font-height-xxl-desktop);
+    }
+}
