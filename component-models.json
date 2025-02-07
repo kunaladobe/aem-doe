@@ -167,15 +167,15 @@
         "multi": false
       },
       {
-        "component": "richtext",
-        "name": "description",
-        "value": "",
-        "label": "Richtext",
-        "valueType": "string"
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
       },
       {
         "component": "richtext",
-        "name": "title",
+        "name": "text",
         "value": "",
         "label": "Text",
         "valueType": "string"
