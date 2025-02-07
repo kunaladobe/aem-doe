@@ -44,9 +44,9 @@
         },
         {
           "component": "richtext",
-          "name": "text",
+          "name": "richtext",
           "value": "",
-          "label": "Text",
+          "label": "Richtext",
           "valueType": "string"
         },
         {
