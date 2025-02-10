@@ -112,17 +112,6 @@
     ]
   },
   {
-    "id": "calendar",
-    "fields": [
-      {
-        "component": "date-time",
-        "label": "Date & Time",
-        "name": "date",
-        "valueType": "date"
-      }
-    ]
-  },
-  {
     "id": "card",
     "fields": [
       {
