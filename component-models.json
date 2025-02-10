@@ -194,6 +194,17 @@
     ]
   },
   {
+    "id": "date-time",
+    "fields": [
+      {
+        "component": "date-time",
+        "label": "Date & Time",
+        "name": "date",
+        "valueType": "date"
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
