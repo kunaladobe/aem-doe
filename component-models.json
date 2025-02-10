@@ -112,7 +112,7 @@
     ]
   },
   {
-    "id": "date-time",
+    "id": "calendar",
     "fields": [
       {
         "component": "date-time",
@@ -190,17 +190,6 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "date-time",
-    "fields": [
-      {
-        "component": "date-time",
-        "label": "Date & Time",
-        "name": "date",
-        "valueType": "date"
       }
     ]
   },

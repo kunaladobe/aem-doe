@@ -285,12 +285,6 @@ a:active {
     /* Borders */
     --nsw-border-width: 1px;
     --nsw-border-style: solid;
-    /*--nsw-border-color: var(--nsw-brand-accent); *?
-  --nsw-border-radius: 4px;
-
-  /* Shadows */
-    /*--nsw-box-shadow: 0 4px 12px 0 rgba(var(--nsw-black-rgb), 0.15);*/
-
     /* Maximum width of container */
     --nsw-container-width: 1200px;
 

@@ -18,7 +18,7 @@
   ],
   "models": [
     {
-      "id": "date-time",
+      "id": "calendar",
       "fields": [
         {
           "component": "date-time",
