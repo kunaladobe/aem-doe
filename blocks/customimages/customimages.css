@@ -1,0 +1,71 @@
+.customimages {
+    background-color: #e3f2fd;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customimages .customimages-content {
+    display: flex;
+    max-width: var(--nsw-container-width);
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: var(--nsw-border-radius);
+    box-shadow: var(--nsw-box-shadow);
+    overflow: hidden;
+}
+
+.customimages .customimages-image {
+    width: 50%;
+    height: auto;
+}
+
+.customimages .customimages-text {
+    padding: 2rem;
+}
+
+.customimages .customimages-text h2 {
+    color: #0d47a1;
+    font-size: var(--nsw-font-size-xl);
+    margin-bottom: 1rem;
+}
+
+.customimages .customimages-text p {
+    font-size: var(--nsw-font-size-md);
+    margin-bottom: 1rem;
+}
+
+.customimages .customimages-button {
+    background-color: #0d47a1;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--nsw-border-radius);
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.customimages .customimages-link {
+    display: block;
+    color: #0d47a1;
+    font-weight: var(--nsw-font-bold);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.customimages .customimages-arrow {
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .customimages .customimages-content {
+        flex-direction: column;
+    }
+    .customimages .customimages-image {
+        width: 100%;
+    }
+    .customimages .customimages-text {
+        padding: 1rem;
+    }
+}
