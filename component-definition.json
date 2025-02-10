@@ -83,21 +83,6 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Calendar",
-          "id": "calendar",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Calendar",
-                  "model": "calendar"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Cards",
           "id": "cards",
           "plugins": {
@@ -182,6 +167,21 @@
                 "template": {
                   "name": "Hero",
                   "model": "hero"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Calendar",
+          "id": "calendar",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Calendar",
+                  "model": "calendar"
                 }
               }
             }
